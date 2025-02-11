@@ -13,9 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-}
 
-.container {
     background-color: rgb(23,23,23);
     padding: 0 150px;
     height: 100vh;
@@ -253,6 +251,7 @@ input:focus {
 }
 
 @media screen and (max-width: 825px) {
+
     .total-container {
         flex-direction: column;
     }
@@ -425,10 +424,9 @@ input:focus {
     background-color: rgb(215, 65, 65);
 }
 
-
 @media screen and (max-width: 768px) {
 
-    .container {
+    body {
         padding: 0 20px;
     }
     
@@ -466,4 +464,6 @@ input:focus {
         font-size: 1rem;
     }
 }
+
+
 
