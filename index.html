@@ -14,19 +14,47 @@
                 <li> sanbudget </li>
             </ul>
         </Nav>
-
         <div class="input-container">
-            <input class="input-budget" type="text" placeholder="Enter your budget">
-            <button class="input-button"> Enter </button>
-            <button class="input-reset"> Reset </button>
+            <input id="budgetInput" class="input-budget" type="text" placeholder="Enter your budget">
+            <button id="inputBtn" class="input-button"> Enter </button>
+            <button id="resetBtn" class="input-reset"> Reset </button>
         </div>
-
         <div class="budget-container">
             <div class="budget-total">
-                <p> Budget: $0 </p>
+                <p id="budget"> Budget: $0 </p>
             </div>
             <div class="budget-add">
-                <button><img src="./assets/plus.png" alt=""></button>
+                <button id="addBudget"><img src="./assets/plus.png" alt=""></button>
+            </div>
+        </div>
+        <div class="total-container">
+            <div class="total-count">
+                <p id="totalBudget"> Total Budget: $0 </p>
+                <p id="remainingBudget"> Remaining Budget: $0 </p>
+            </div>
+            <div class="total-progress">
+                <div id="progressBar" class="progress"></div>
+            </div>
+        </div>
+        <div class="expense-add">
+            <button id="addExpense"> Add Expense </button>
+        </div>
+        <div id="expenseModal" class="expense-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3> Add New Expense </h3>
+                    <span id="closeModal" class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <input id="expenseName" type="text" placeholder="Expense Name" class="modal-input">
+                    <input id="expenseAmount" type="number" placeholder="Amount" class="modal-input">
+                    <button id="modalBtn" class="modal-submit"> Add Expense </button>
+                </div>
+            </div>
+        </div>
+        <div class="expense-container">
+            <div id="expenses" class="expenses">
+                <p> expenses will show here </p>
             </div>
         </div>
     </div>
