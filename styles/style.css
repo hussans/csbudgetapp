@@ -1,0 +1,191 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/Inter_28pt-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(23,23,23);
+    padding: 0 150px;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 25px 0;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 5px;
+}
+
+.input-budget {
+    border: none;
+    border-radius: 6px;
+
+    background-color: rgb(20, 20, 20);
+    color: white;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 8px 10px;
+
+    box-shadow: 0px 1px 0px rgba(45, 45, 45, 0.25);
+}
+
+input:focus {
+    border: none;
+    outline: rgb(170, 170, 170) 1px solid;;
+}
+
+.input-button {
+    border: rgb(115, 115, 115) 1px solid;
+    border-radius: 6px;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 7px 50px;
+
+    background-color: rgb(33,33,33);
+    color: white;
+}
+
+.input-button:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
+.input-button:active {
+    background-color: rgb(20, 20, 20);
+}
+
+.input-reset {
+    border: none;
+    border-radius: 6px;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 7px 50px;
+
+    background-color: rgb(215, 65, 65);
+    color: white;
+}
+
+.input-reset:hover {
+    background-color: rgb(225, 95, 95);
+    cursor: pointer;
+}
+
+.input-reset:active {
+    background-color: rgb(180, 50, 50);
+}
+
+@media screen and (max-width: 850px) {
+    
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-budget {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .input-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .input-reset {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.budget-container {
+    display: flex;
+    gap: 10px;
+}
+
+.budget-total {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 25px 10px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    outline: rgb(45, 45, 45) 1px solid;
+}
+
+.budget-total:hover {
+    outline: rgb(170, 170, 170) 1px solid;
+}
+
+.budget-total p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.budget-add button {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    border: none;
+    outline: rgb(45, 45, 45) 1px solid;
+}
+
+.budget-add button:hover {
+    outline: rgb(170, 170, 170) 1px solid;
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
+.budget-add button:active {
+    outline: rgb(170, 170, 170) 1px solid;
+    background-color: rgb(20, 20, 20);
+}
+
+.budget-add img {
+    width: 50px;
+    padding: 25px;
+}
+
+@media screen and (max-width: 825px) {
+
+    .budget-container {
+        flex-direction: column;
+    }
+
+    .budget-total {
+        box-sizing: border-box;
+    }
+
+    .budget-add button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
